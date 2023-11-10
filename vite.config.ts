@@ -6,7 +6,7 @@ export default defineConfig( ({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '');
   return {
     define: {
-      'process.env.GAME_HUB_API_KEY': JSON.stringify(env.GAME_HUB_API_KEY)
+      'process.env.game_hub_api_key': JSON.stringify(env.game_hub_api_key)
     },
     plugins: [react()],
   }
